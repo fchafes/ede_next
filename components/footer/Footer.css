@@ -1,0 +1,20 @@
+.main-footer {
+  display: flex;
+  width: 100%;
+  min-height: 50px;
+  padding: 4em 3em 2em 3em;
+  font-size: 0.9em;
+  box-sizing: border-box;
+}
+
+.main-footer .f-left {
+  flex-grow: 1.6;
+}
+
+.main-footer .f-right {
+  flex-grow: 1;
+}
+
+.main-footer .f-right ul {
+  list-style: none;
+}

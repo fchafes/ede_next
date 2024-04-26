@@ -1,0 +1,93 @@
+.od-main {
+  display: flex;
+  width: 100%;
+  margin-top: 7em;
+}
+
+.od-main .od-left {
+  height: 100%;
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.od-main .od-left .o-image-box img {
+  width: 100%;
+}
+
+.od-main .od-right {
+  width: 45%;
+  display: flex;
+  justify-content: center;
+}
+
+.od-main .od-right .o-info-box {
+  width: 55%;
+}
+
+.od-main .od-right .o-info-box .title-text {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2em;
+}
+
+.od-main .od-right .o-info-box .title-text h2 {
+  font-family: "Suisse-Works-Regular";
+  font-size: 1.8em;
+  text-transform: capitalize;
+}
+
+.od-main .od-right .o-info-box .title-text h4 {
+  font-size: 0.8em;
+}
+
+.od-main .od-right .o-info-box .intro-text {
+  margin-bottom: 5em;
+}
+
+.od-main .od-right .o-info-box .intro-text p {
+  font-size: 1em;
+}
+
+.od-main .od-right .o-info-box .info-text {
+  margin-bottom: 5em;
+}
+
+.od-main .od-right .o-info-box .info-text .i-title,
+.od-main .od-right .o-info-box .info-text .i-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.od-main .od-right .o-info-box .info-text .i-title {
+  font-size: 0.8em;
+}
+
+.od-main .od-right .o-info-box .info-text .i-item p {
+  font-size: 1em;
+}
+
+.od-main .od-right .o-info-box .description-text {
+  margin-bottom: 2em;
+}
+
+.od-main .od-right .o-info-box .description-text p {
+  font-size: 1em;
+}
+
+.od-main .od-right .o-info-box .description-text :first-child {
+  font-size: 0.8em;
+}
+
+.od-main .od-right .o-info-box .link-spec {
+  display: block;
+  margin-bottom: 5em;
+  font-size: 1em;
+}
+
+.od-main .od-right .o-info-box .link-inquire {
+  margin-top: 5em;
+  text-align: end;
+  font-size: 0.9em;
+}

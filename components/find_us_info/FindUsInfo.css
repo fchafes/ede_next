@@ -1,0 +1,23 @@
+.findus-i-main {
+  margin-left: 3em;
+  margin-top: 20vh;
+  display: flex;
+}
+
+.findus-i-main section {
+  margin-right: 10em;
+}
+
+.findus-i-main section p {
+  margin-bottom: 1.5em;
+}
+
+.findus-i-main h1 {
+  font-family: "Suisse-Works-Regular";
+  font-size: 1.9em;
+  margin-bottom: 1em;
+}
+
+.findus-i-main p {
+  font-size: 1.2em;
+}

@@ -1,0 +1,50 @@
+.gallery-object {
+  width: 33%;
+  height: 42vh;
+  max-height: 300px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 0.9em;
+}
+
+.gallery-object a {
+  height: 89%;
+  width: 100%;
+}
+
+.gallery-object a .object-media {
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.gallery-object a .object-media .hover-img {
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.gallery-object a .object-media .hover-img:hover {
+  opacity: 0;
+}
+
+.gallery-object .object-info {
+  display: flex;
+  margin-left: 1em;
+}
+
+.gallery-object .object-info p {
+  text-transform: capitalize;
+}
+
+.gallery-object .object-info :first-child {
+  margin-right: 15%;
+}

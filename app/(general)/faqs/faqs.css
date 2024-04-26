@@ -1,0 +1,39 @@
+.faqs-main {
+  display: flex;
+}
+
+.faqs-main section:first-child {
+  width: 55%;
+}
+
+.faqs-main section:first-child img {
+  width: 100%;
+  background-color: rgb(125, 125, 125);
+  height: 600px;
+}
+
+.faqs-main section:nth-child(2) {
+  width: 45%;
+  padding: 10em 6em 5em 6em;
+  box-sizing: border-box;
+}
+
+.faqs-main section:nth-child(2) .about-text-wrap {
+  max-width: 400px;
+}
+
+.faqs-main section:nth-child(2) .about-text-wrap h1 {
+  margin-bottom: 1em;
+  font-family: "Suisse-Works-Regular";
+  font-size: 1.8em;
+}
+
+.faqs-main section:nth-child(2) .about-text-wrap h5 {
+  text-decoration: underline;
+  font-size: 0.8em;
+}
+
+.faqs-main section:nth-child(2) .about-text-wrap p {
+  margin-bottom: 1em;
+  font-size: 0.8em;
+}

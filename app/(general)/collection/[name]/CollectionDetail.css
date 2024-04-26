@@ -1,0 +1,59 @@
+.c-detail-gallery {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 2em;
+}
+
+.c-detail-gallery .c-gallery-box {
+  width: 65vw;
+  height: 80vh;
+}
+
+.c-detail-gallery .c-gallery-box:nth-child(2) {
+  align-self: start;
+}
+
+.c-detail-gallery .c-gallery-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.c-detail-gallery .c-gallery-box:nth-child(3) {
+  width: 80vh;
+  height: 65vw;
+}
+
+.c-detail-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 290px;
+  margin-top: 30vh;
+  margin-left: 3em;
+}
+
+.c-detail-info .head-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  margin-bottom: 2em;
+}
+
+.c-detail-info .head-info h1 {
+  font-family: 'Suisse-Works-Regular';
+  text-transform: capitalize;
+  font-size: 1.9em;
+  line-height: 0.8em;
+}
+
+.c-detail-info .head-info h2 {
+  font-size: 0.8em;
+  line-height: 0.8em;
+}
+
+.c-detail-info h3 {
+  font-size: 1em;
+}

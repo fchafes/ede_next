@@ -1,0 +1,6 @@
+.gallery-container {
+  display: flex;
+  justify-content: flex-start;
+  gap: 0.5%;
+  flex-wrap: wrap;
+}

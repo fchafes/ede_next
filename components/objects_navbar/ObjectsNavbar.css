@@ -1,0 +1,12 @@
+.objects-nav {
+  display: inline-block;
+  width: auto;
+  margin: 5em 0 2em 3em;
+  font-size: 0.9em;
+}
+
+.objects-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5em;
+}

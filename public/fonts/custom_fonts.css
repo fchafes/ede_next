@@ -1,0 +1,14 @@
+@font-face {
+  font-family: "Suisse-Int-Regular";
+  src: url("/fonts/Suisse_Int_Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Suisse-Works-Regular";
+  src: url("/fonts/Suisse_Works_Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Suisse-Int-I-Book";
+  src: url("/fonts/Suisse_Int_I_Book.otf") format("opentype");
+}

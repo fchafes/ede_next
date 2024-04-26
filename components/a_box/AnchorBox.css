@@ -1,0 +1,43 @@
+.a-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.a-box .underline {
+  width: 0;
+  height: 1px;
+  background-color: #000;
+  transition: width 0.16s ease-in-out;
+}
+
+.a-box:hover .underline {
+  width: 100%;
+}
+
+.noShrink-a-box {
+  align-items: flex-start;
+  display: inline-block;
+}
+
+.biggerFont-a-box {
+  font-size: 1.1em;
+}
+
+.smallFont-a-box {
+  font-size: 0.7em;
+}
+
+.collection-a-box {
+  display: block;
+  line-height: 0.7em;
+}
+
+.diffMode-a-box a {
+  color: #fff;
+}
+
+.collection-a-box .underline {
+  height: 4px;
+  transition: width 0.2s ease-in-out;
+}
