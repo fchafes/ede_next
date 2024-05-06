@@ -1,7 +1,7 @@
 "use client";
+
 import { BigNav } from "@/components/big_nav/BigNav";
-import { friendsData } from "@/data/data";
-import { collabsData } from "@/data/data";
+import { friendsData, collabsData } from "@/data/data";
 
 // export const metadata = {
 //   title: "EDE - About",
@@ -11,8 +11,21 @@ import { collabsData } from "@/data/data";
 export default function Friends() {
   return (
     <>
-      <BigNav navData={friendsData} smallFont={true} />
-      <BigNav navData={collabsData} smallFont={true} collabs={true} />
+      <BigNav
+        navData={friendsData}
+        smallFont={true}
+        list={true}
+        isCollectionDiff={true}
+        isMobileFriends={true}
+      />
+      <BigNav
+        navData={collabsData}
+        smallFont={true}
+        collabs={true}
+        list={true}
+        isCollectionDiff={true}
+        isMobileFriends={true}
+      />
     </>
   );
 }

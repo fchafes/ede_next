@@ -12,3 +12,18 @@
   font-family: "Suisse-Int-I-Book";
   src: url("/fonts/Suisse_Int_I_Book.otf") format("opentype");
 }
+
+@font-face {
+  font-family: "Suisse-Int-I-Black";
+  src: url("/fonts/Suisse_Int_I_Black.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Suisse-Int-I-Bold";
+  src: url("/fonts/Suisse_Int_I_Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Suisse-Int-I-Medium";
+  src: url("/fonts/Suisse_Int_I_Medium.otf") format("opentype");
+}

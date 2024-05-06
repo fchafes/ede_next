@@ -58,7 +58,7 @@ export default function ObjectDetail({ params }) {
             />
             <div className="link-inquire">
               <AnchorBox
-                href="/inquire"
+                href="/contact"
                 text="INQUIRE"
                 noShrink={true}
                 biggerFont={true}

@@ -20,6 +20,14 @@
   width: 45%;
   display: flex;
   justify-content: center;
+  mix-blend-mode: difference;
+}
+
+.od-main .od-right p,
+.od-main .od-right h2,
+.od-main .od-right h4,
+.od-main .od-right a {
+  color: #dbdbdb;
 }
 
 .od-main .od-right .o-info-box {
@@ -90,4 +98,31 @@
   margin-top: 5em;
   text-align: end;
   font-size: 0.9em;
+  position: sticky;
+  top: 50%;
+}
+
+@media screen and (max-width: 768px) {
+  .od-main {
+    flex-direction: column-reverse;
+  }
+  .od-main .od-left {
+    width: 100%;
+    gap: 0px;
+  }
+  .od-main .od-right {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    mix-blend-mode: difference;
+    padding: 0 1em;
+    box-sizing: border-box;
+  }
+  .od-main .od-right .o-info-box {
+    width: 100%;
+  }
+  .od-main .od-right .o-info-box .link-inquire {
+    margin-bottom: 2em;
+    margin-top: 2em;
+  }
 }

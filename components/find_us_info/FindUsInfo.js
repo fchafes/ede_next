@@ -39,7 +39,7 @@ export const FindUsInfo = () => {
           Spain
         </p>
       </section>
-      <section>
+      {/* <section>
         <h1>North América</h1>
         <p>
         Estudio del Espacio
@@ -52,7 +52,7 @@ export const FindUsInfo = () => {
           <br />
           Spain
         </p>
-      </section>
+      </section> */}
     </main>
   );
 };

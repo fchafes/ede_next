@@ -1,4 +1,5 @@
 "use client";
+
 import { CollectionsCover } from "@/components/collections_cover/CollectionsCover";
 import { BigNav } from "@/components/big_nav/BigNav";
 import { useState } from "react";
@@ -14,7 +15,7 @@ export default function Collections() {
   return (
     <>
       <CollectionsCover cover={cover} />
-      <BigNav setCover={setCover} navData={collectionsData} />
+      <BigNav setCover={setCover} navData={collectionsData} isCollectionDiff={true}/>
     </>
   );
 }

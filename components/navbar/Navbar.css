@@ -1,37 +1,59 @@
 .main-nav {
-  display: flex;
-  padding: 1.5em 3em;
+  padding: 1.5em 1em;
   font-size: 0.9em;
   z-index: 1000;
-  width: 100%;
   position: fixed;
   top: 0;
+  right: 0;
   box-sizing: border-box;
   mix-blend-mode: difference;
 }
 
-.main-nav div a span {
-  font-size: 1.2em;
-  color: #fff;
+.logo-box {
+  position: fixed;
+  top: 0;
+  padding: 1.5em 0 0 1em;
+  margin-top: -5px;
+  z-index: 1000;
+  mix-blend-mode: difference;
 }
 
-.main-nav :first-child {
-  flex-grow: 1;
+.logo-box a {
+  font-family: "Suisse-Int-I-Bold";
+  font-size: 1em;
+  color: #dbdbdb;
 }
 
-.main-nav .a-box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.logo-box a img {
+  width: 220px;
 }
 
 .main-nav ul {
   list-style: none;
   display: flex;
-  gap: 1.5em;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.3em;
 }
 
-.main-nav ul li .underline {
+.main-nav ul .switch-label {
+  margin-right: 3em;
+  margin-left: 4px;
+}
+
+.main-nav ul li {
+  border: 1px solid #fff;
+  padding: 0.15em 0.4em;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.main-nav ul p {
+  color: #fff;
+}
+
+/* .main-nav ul li .underline {
   width: 0;
   height: 1px;
   background-color: #ffffff;
@@ -40,4 +62,104 @@
 
 .main-nav .a-box:hover .underline {
   width: 100%;
+} */
+
+/* CON BOTONES */
+
+.main-nav ul li:not(:first-child):hover {
+  background-color: #fff;
+}
+
+.main-nav ul li:hover a {
+  color: #252525;
+}
+
+.main-nav ul li a {
+  transition: color 0.2s ease;
+}
+
+.main-nav ul li {
+  transition: background-color 0.2s ease;
+}
+
+.main-nav ul .switch-label {
+  margin-right: 0;
+}
+
+.main-nav ul li.no-round:hover {
+  background-color: transparent;
+}
+
+.main-nav ul li.no-round {
+  border-radius: 0;
+  border: none;
+}
+.main-nav ul .no-round .burger-button {
+  width: 24px;
+  height: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+}
+
+.main-nav ul .no-round .burger-button .burger-lines {
+  position: absolute;
+  height: 1px;
+  width: 24px;
+  background-color: #fff;
+  transition: width 0.3s ease, rotate 0.3s ease;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-nav ul .no-round .burger-button .burger-lines:first-child {
+  top: 13%;
+}
+
+.main-nav ul .no-round .burger-button .burger-lines:nth-child(2) {
+  top: 8.5px;
+}
+
+.main-nav ul .no-round .burger-button .burger-lines:nth-child(3) {
+  bottom: 13%;
+}
+
+.mobile-menu-container {
+  display: none;
+}
+
+/* DARK MODE */
+
+.switch {
+  color: #fff;
+  mix-blend-mode: difference;
+}
+
+/* ----- MOBILE STYLE ----- */
+
+@media screen and (max-width: 768px) {
+  .logo-box {
+    margin-top: -1px;
+  }
+  .mobile-menu-container {
+    display: block;
+    position: absolute;
+    transition: left 0.3s ease-in-out;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+    z-index: 15;
+    background-color: #ffffff;
+    padding: 8em 1em 2em 1em;
+  }
+  .mobile-menu-container .m-m-list {
+    list-style: none;
+  }
+  .mobile-menu-container .m-m-list a {
+    font-size: 2.5em;
+  }
 }

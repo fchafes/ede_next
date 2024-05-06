@@ -2,10 +2,17 @@
   margin-left: 3em;
   margin-top: 20vh;
   display: flex;
+  mix-blend-mode: difference;
 }
 
 .findus-i-main section {
   margin-right: 10em;
+}
+
+.findus-i-main section p,
+.findus-i-main h1,
+.findus-i-main p {
+  color: #fff;
 }
 
 .findus-i-main section p {
@@ -20,4 +27,32 @@
 
 .findus-i-main p {
   font-size: 1.2em;
+}
+
+@media screen and (max-width: 768px) {
+  .findus-i-main {
+    width: 100vw;
+    padding: 0 1em;
+    margin-top: 7em;
+    margin-left: 0em;
+    flex-direction: column;
+    margin-right: 0;
+    box-sizing: border-box;
+  }
+  .findus-i-main section {
+    width: 100%;
+  }
+  .findus-i-main section p {
+    margin-bottom: 1em;
+  }
+  .findus-i-main h1 {
+    font-size: 1.5em;
+    margin-bottom: 0.8em;
+  }
+  .findus-i-main p {
+    font-size: 1em;
+  }
+  .findus-i-main section:first-child {
+    margin-bottom: 1em;
+  }
 }

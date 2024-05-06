@@ -1,12 +1,36 @@
 .objects-nav {
   display: inline-block;
   width: auto;
-  margin: 5em 0 2em 3em;
-  font-size: 0.9em;
+  margin: 5.5em 0 1em 1.2em;
+  font-size: 0.85em;
+  mix-blend-mode: difference;
 }
 
 .objects-nav ul {
   list-style: none;
   display: flex;
-  gap: 1.5em;
+  gap: 0.3em;
+}
+
+.objects-nav ul li {
+  border: 1px solid #dbdbdb;
+  padding: 0.25em 0.45em;
+  border-radius: 20px;
+  transition: border 0.2s ease, background-color 0.2s ease;
+}
+
+
+
+/* CON BOTONES */
+
+.objects-nav ul li:hover {
+  background-color: #dbdbdb;
+}
+
+.objects-nav ul li:hover a {
+  color: #000000;
+}
+
+.objects-nav ul li a {
+  transition: color 0.2s ease;
 }

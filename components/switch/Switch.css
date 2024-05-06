@@ -1,0 +1,20 @@
+.nav-switch {
+  width: 30px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.nav-switch:hover .n-inside-switch {
+  background-color: none !important;
+}
+
+.nav-switch .n-inside-switch {
+  width: 18px;
+  height: 18px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  background-color: #ffffff;
+  margin-left: -3px;
+}

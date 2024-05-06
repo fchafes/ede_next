@@ -7,13 +7,12 @@ export default function ObjectsNavbar() {
       <nav className="objects-nav">
         <ul>
           <li>
-            <AnchorBox href="#" text="Lamps" />
+            <AnchorBox href="#" text="Lamps" 
+                diffMode={true}/>
           </li>
           <li>
-            <AnchorBox href="#" text="Clothing" />
-          </li>
-          <li>
-            <AnchorBox href="#" text="Sofas" />
+            <AnchorBox href="#" text="Textile" 
+                diffMode={true}/>
           </li>
         </ul>
       </nav>

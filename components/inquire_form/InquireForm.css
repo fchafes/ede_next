@@ -1,7 +1,15 @@
 .inquire-main {
   width: 540px;
+  height: 100%;
   margin-top: 7em;
   margin-left: 3em;
+  mix-blend-mode: difference;
+}
+
+.inquire-main h1,
+.inquire-main p,
+.inquire-main form label {
+  color: #dbdbdb;
 }
 
 .inquire-main h1 {
@@ -29,10 +37,12 @@
   appearance: none;
   box-sizing: border-box;
   padding: 0.3em 0;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #9f9f9f;
   margin-bottom: 1em;
   font-size: 1.5em;
   font-family: "Suisse-Int-Regular";
+  background-color: rgba(250, 235, 215, 0);
+  color: #dbdbdb;
 }
 
 .inquire-main form textarea {
@@ -45,23 +55,35 @@
 
 .inquire-main form button {
   float: right;
-  text-transform: uppercase;
-  border: 1px solid #000;
-  background-color: #000;
-  color: #fff;
-  padding: 8px 18px;
-  border-radius: 6px;
+  /* text-transform: uppercase; */
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  padding: 0.5em 0.8em;
+  border-radius: 20px;
   font-size: 0.9em;
   cursor: pointer;
+  transition: background-color 0.1s ease-in-out, color 0.1s ease-in-out;
+  background-color: rgba(250, 235, 215, 0);
 }
 
 .inquire-main form button:hover {
-  float: right;
-  text-transform: uppercase;
-  border: 1px solid #000;
-  background-color: #fff;
-  color: #000;
-  padding: 8px 18px;
-  border-radius: 6px;
-  font-size: 0.9em;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+@media screen and (max-width: 768px) {
+  .inquire-main {
+    width: 100%;
+    margin-top: 4em;
+    margin-left: 0;
+  }
+  .inquire-main h1 {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+  }
+  .inquire-main p {
+    font-size: 1.5em;
+    margin-bottom: 2em;
+    line-height: 1.2em;
+  }
 }

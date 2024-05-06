@@ -1,0 +1,78 @@
+.car-container {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.car-img-container {
+  width: 17em;
+  height: 26em;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.carousel img {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity ease 0.7s;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.carousel img:nth-child(1) {
+  z-index: 8;
+}
+.carousel img:nth-child(2) {
+  z-index: 7;
+}
+.carousel img:nth-child(3) {
+  z-index: 6;
+}
+.carousel img:nth-child(4) {
+  z-index: 5;
+}
+.carousel img:nth-child(5) {
+  z-index: 4;
+}
+.carousel img:nth-child(6) {
+  z-index: 3;
+}
+.carousel img:nth-child(7) {
+  z-index: 2;
+}
+.carousel img:nth-child(8) {
+  z-index: 1;
+}
+
+.carousel .active-anim {
+  opacity: 1;
+}
+
+.carousel img:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .car-img-container {
+    width: 12em;
+    height: 19em;
+    position: relative;
+    margin-bottom: 10px;
+  }
+}

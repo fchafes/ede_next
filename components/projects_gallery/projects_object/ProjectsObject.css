@@ -1,0 +1,22 @@
+.po-box {
+  width: 100%;
+}
+
+.po-img {
+  width: 100%;
+  margin-bottom: 3px;
+}
+
+.po-img img {
+  width: 100%;
+}
+
+.po-text {
+  padding-left: 1em;
+  font-size: 0.9em;
+  mix-blend-mode: difference;
+}
+
+.po-text p {
+  color: #dbdbdb;
+}

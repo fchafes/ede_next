@@ -33,6 +33,13 @@
   max-width: 290px;
   margin-top: 30vh;
   margin-left: 3em;
+  mix-blend-mode: difference;
+}
+
+.c-detail-info h1,
+.c-detail-info h2,
+.c-detail-info h3 {
+  color: #dbdbdb;
 }
 
 .c-detail-info .head-info {
@@ -43,7 +50,7 @@
 }
 
 .c-detail-info .head-info h1 {
-  font-family: 'Suisse-Works-Regular';
+  font-family: "Suisse-Works-Regular";
   text-transform: capitalize;
   font-size: 1.9em;
   line-height: 0.8em;
@@ -56,4 +63,19 @@
 
 .c-detail-info h3 {
   font-size: 1em;
+}
+
+@media screen and (max-width: 768px) {
+  .c-detail-gallery {
+    gap: 1em;
+  }
+  .c-detail-info {
+    margin-left: 1em;
+  }
+  .c-detail-info .head-info h1 {
+    font-size: 1.5em;
+  }
+  .c-detail-info .head-info {
+    margin-bottom: 1.5em;
+  }
 }

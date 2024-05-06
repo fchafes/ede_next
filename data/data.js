@@ -86,6 +86,12 @@ export const objectsData = [
     path: "/object_detail/sombra",
     onSrc: `${bucket}/desktop/projects_objects/2_sombra_on.jpg`,
     offSrc: `${bucket}/desktop/projects_objects/2_sombra_off.jpg`,
+    detail_images: [
+      `${bucket}/desktop/projects_objects/2_sur_on.jpg`,
+      `${bucket}/desktop/projects_objects/2_sur_on.jpg`,
+      `${bucket}/desktop/projects_objects/2_sur_on.jpg`,
+      `${bucket}/desktop/projects_objects/2_sur_on.jpg`,
+    ],
   },
   {
     title: "horizonte P",
@@ -182,8 +188,8 @@ export const objectsData = [
 export const aboutData = [
   {
     id: "01",
-    title: "about",
-    path: "/about/camila",
+    title: "bio",
+    path: "/bio",
     nav_text: "Camila Fernandez",
   },
   {
@@ -197,6 +203,39 @@ export const aboutData = [
     title: "Find Us",
     path: "/find_us",
     nav_text: "Stores around the world",
+  },
+  {
+    id: "04",
+    title: "News",
+    path: "/news",
+    nav_text: "Features",
+  },
+  {
+    id: "05",
+    title: "Friends",
+    path: "/friends",
+    nav_text: "Community",
+  },
+];
+
+export const mobileAboutData = [
+  {
+    id: "01",
+    title: "bio",
+    path: "/bio",
+    nav_text: "Camila",
+  },
+  {
+    id: "02",
+    title: "FAQS",
+    path: "/faqs",
+    nav_text: "More info",
+  },
+  {
+    id: "03",
+    title: "Find Us",
+    path: "/find_us",
+    nav_text: "Stores",
   },
   {
     id: "04",
@@ -265,7 +304,7 @@ export const friendsData = [
     id: "09",
     title: "María Villamil",
     path: "#",
-    nav_text: "Graphic & Editorial Design",
+    nav_text: "Graphic Design",
   },
   {
     id: "10",
@@ -341,10 +380,10 @@ export const newsData = [
   },
 ];
 
-export const camilaData = [
+export const bioData = [
   {
     profile_pic: `${bucket}/desktop/about/camila_profile.webp`,
-    title: "About",
+    title: "Bio",
     text: [
       "Born and raised in Uruguay, Camila draws her initial inspiration from the serene landscapes and archaeological wonders of her hometown on the west coast. The simplicity and beauty of this small town continue to hold the deepest memories for her. Camila's early studies and works are grounded in traditional architecture and urbanism, shaping a solid foundation for her design principles and the mindful use of resources and materials in her creations.",
       "In contrast to this structured environment, Camila finds inspiration in the unbounded freedom of the underground music and arts scene. This unconventional influence enriches her latest work approaches, creating a harmonious blend of tradition and experimentation.",
@@ -407,5 +446,122 @@ export const faqsData = [
           "Because of the custom, made-to-order nature of our work, unfortunately we are not able to accept returns or offer exchanges. All sales are final.",
       },
     ],
+  },
+];
+
+export const carouselImages = [
+  {
+    id: 1,
+    link: `${bucket}/desktop/carousel/home_1.webp`,
+  },
+  {
+    id: 2,
+    link: `${bucket}/desktop/carousel/home_2.webp`,
+  },
+  {
+    id: 3,
+    link: `${bucket}/desktop/carousel/home_3.webp`,
+  },
+  {
+    id: 4,
+    link: `${bucket}/desktop/carousel/home_4.webp`,
+  },
+  {
+    id: 5,
+    link: `${bucket}/desktop/carousel/home_5.webp`,
+  },
+  {
+    id: 6,
+    link: `${bucket}/desktop/carousel/home_6.webp`,
+  },
+  {
+    id: 7,
+    link: `${bucket}/desktop/carousel/home_7.webp`,
+  },
+  {
+    id: 8,
+    link: `${bucket}/desktop/carousel/home_8.webp`,
+  },
+];
+
+export const projectsData = [
+  {
+    column: [
+      {
+        src: `${bucket}/desktop/carousel/home_4.webp`,
+        text: "Alguna foto de algun proyecto...",
+      },
+      {
+        src: `${bucket}/desktop/projects_objects/2_sur_on.jpg`,
+        text: "Alguna foto de algun proyecto...",
+      },
+      {
+        src: `${bucket}/desktop/carousel/home_4.webp`,
+        text: "Otro proyecto",
+      },
+      {
+        src: `${bucket}/desktop/projects_objects/2_sur_on.jpg`,
+        text: "Algun otro...",
+      },
+    ],
+  },
+  {
+    column: [
+      {
+        src: `${bucket}/desktop/projects_objects/2_sur_on.jpg`,
+        text: "Alguna foto de algun proyecto...",
+      },
+      {
+        src: `${bucket}/desktop/carousel/home_4.webp`,
+        text: "Alguna foto de algun proyecto...",
+      },
+      {
+        src: `${bucket}/desktop/projects_objects/2_sur_on.jpg`,
+        text: "Algun otro...",
+      },
+      {
+        src: `${bucket}/desktop/carousel/home_4.webp`,
+        text: "Otro proyecto",
+      },
+    ],
+  },
+  {
+    column: [
+      {
+        src: `${bucket}/desktop/carousel/home_4.webp`,
+        text: "Alguna foto de algun proyecto...",
+      },
+      {
+        src: `${bucket}/desktop/projects_objects/2_sur_on.jpg`,
+        text: "Alguna foto de algun proyecto...",
+      },
+      {
+        src: `${bucket}/desktop/carousel/home_4.webp`,
+        text: "Otro proyecto",
+      },
+      {
+        src: `${bucket}/desktop/projects_objects/2_sur_on.jpg`,
+        text: "Algun otro...",
+      },
+    ],
+  },
+];
+
+export const mobileProjectsData = [
+  {
+    src: `${bucket}/desktop/carousel/home_4.webp`,
+    text: "Alguna foto de algun proyecto...",
+  },
+  {
+    src: `${bucket}/desktop/projects_objects/2_sur_on.jpg`,
+    text: "Alguna foto de algun proyecto...",
+  },
+  {
+    src: `${bucket}/desktop/carousel/home_4.webp`,
+    text: "Otro proyecto",
+  },
+  {
+    src: `${bucket}/desktop/projects_objects/2_sur_on.jpg`,
+    text: "Algun otro...",
   },
 ];

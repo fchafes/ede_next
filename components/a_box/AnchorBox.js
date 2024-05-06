@@ -1,9 +1,25 @@
 import "./AnchorBox.css";
 import Link from "next/link";
 
-export const AnchorBox = ({ href, text, noShrink, isBlank, biggerFont, isCollection, smallFont, diffMode }) => {
+export const AnchorBox = ({
+  href,
+  text,
+  noShrink,
+  isBlank,
+  biggerFont,
+  isCollection,
+  smallFont,
+  diffMode,
+  footer,
+}) => {
   return (
-    <div className={`a-box ${noShrink ? "noShrink-a-box" : ""} ${biggerFont ? "biggerFont-a-box" : ""} ${isCollection ? "collection-a-box" : ""} ${smallFont ? "smallFont-a-box" : ""} ${diffMode ? "diffMode-a-box" : ""} `}>
+    <div
+      className={`a-box ${noShrink ? "noShrink-a-box" : ""} ${
+        biggerFont ? "biggerFont-a-box" : ""
+      } ${isCollection ? "collection-a-box" : ""} ${
+        smallFont ? "smallFont-a-box" : ""
+      } ${diffMode ? "diffMode-a-box" : ""} ${footer ? "footer-a-box" : ""} `}
+    >
       {isBlank ? (
         <a href={href} target="_blank">
           {text}

@@ -10,6 +10,14 @@
   margin-bottom: 5em;
 }
 
+.big-nav .big-item.isList {
+  margin-bottom: 1.8em;
+}
+
+.big-nav .big-item.isCollab {
+  margin-top: 2.8em;
+}
+
 .big-nav .big-item .bn-anchor {
   font-size: 4.8em;
   margin-left: 27.5vw;
@@ -18,10 +26,50 @@
   position: absolute;
 }
 
-.big-nav .big-item:first-child {
-  margin-top: 4em;
+.big-nav:nth-child(2) .big-item.isCollab:first-child {
+  margin-top: -7em;
+  margin-bottom: -1.1em;
 }
 
 .big-nav .big-item p {
   font-size: 0.8em;
+}
+
+.big-nav.isCollectionDiff {
+  mix-blend-mode: difference;
+}
+
+.big-nav.isCollectionDiff a {
+  color: #fff;
+}
+
+.big-nav.isCollectionDiff p {
+  color: #fff;
+}
+
+/* ----- MOBILE STYLE ----- */
+
+@media screen and (max-width: 768px) {
+  .big-nav .big-item {
+    margin-bottom: 4em;
+  }
+  .big-nav .big-item .bn-anchor {
+    font-size: 3em;
+    margin-left: 1em;
+  }
+  .big-nav {
+    margin-left: 1em;
+  }
+  .big-nav .big-item p {
+    font-size: 0.7em;
+  }
+  .mobile-about .big-item .bn-anchor {
+    margin-left: 1.6em;
+  }
+  .mobile-friends .big-item .bn-anchor {
+    margin-left: 2.5em;
+  }
+  .mobile-friends {
+    margin-top: 9em;
+  }
 }

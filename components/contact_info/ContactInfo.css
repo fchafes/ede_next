@@ -1,14 +1,33 @@
-.contact-main {
+.contact-info-main {
   margin-left: 3em;
   margin-top: 7em;
+  mix-blend-mode: difference;
 }
 
-.contact-main h1 {
+.contact-info-main h1,
+.contact-info-main p {
+  color: #dbdbdb;
+}
+
+.contact-info-main h1 {
   font-family: "Suisse-Works-Regular";
   font-size: 1.9em;
   margin-bottom: 1em;
 }
 
-.contact-main p {
+.contact-info-main p {
   font-size: 1.9em;
+}
+
+@media screen and (max-width: 768px) {
+  .contact-info-main {
+    margin-left: 0;
+  }
+  .contact-info-main h1 {
+    font-size: 1.5em;
+    margin-bottom: 0.7em;
+  }
+  .contact-info-main p {
+    font-size: 1.5em;
+  }
 }

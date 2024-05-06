@@ -1,4 +1,6 @@
 import { ContactInfo } from "@/components/contact_info/ContactInfo";
+import InquireForm from "@/components/inquire_form/InquireForm";
+import "./contact.css";
 
 export const metadata = {
   title: "Contact - EDE",
@@ -8,7 +10,10 @@ export const metadata = {
 export default function Contact() {
   return (
     <>
-      <ContactInfo />
+      <main className="contact-main">
+        <InquireForm />
+        <ContactInfo />
+      </main>
     </>
   );
 }

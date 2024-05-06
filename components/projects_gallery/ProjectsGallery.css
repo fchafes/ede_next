@@ -1,0 +1,16 @@
+.projects-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 5em 0 0 0;
+  box-sizing: border-box;
+  gap: 0.5%;
+}
+
+.projects-container .projects-column {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}

@@ -8,7 +8,7 @@
   width: 0;
   height: 1px;
   background-color: #000;
-  transition: width 0.16s ease-in-out;
+  transition: width 0.1s ease-in-out;
 }
 
 .a-box:hover .underline {
@@ -25,7 +25,7 @@
 }
 
 .smallFont-a-box {
-  font-size: 0.7em;
+  font-size: 0.4em;
 }
 
 .collection-a-box {
@@ -34,10 +34,29 @@
 }
 
 .diffMode-a-box a {
-  color: #fff;
+  color: #dbdbdb;
 }
 
 .collection-a-box .underline {
   height: 4px;
   transition: width 0.2s ease-in-out;
+}
+
+.smallFont-a-box .underline {
+  height: 2px;
+  transition: width 0.2s ease-in-out;
+}
+
+.isCollectionDiff .underline {
+  background-color: #fff;
+}
+
+.footer-a-box .underline {
+  background-color: #ffffff;
+}
+
+/* CON BOTONES */
+
+.a-box.diffMode-a-box:hover .underline {
+  width: 0;
 }

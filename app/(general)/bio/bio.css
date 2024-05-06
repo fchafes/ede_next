@@ -18,15 +18,39 @@
 
 .camila-main section:nth-child(2) .about-text-wrap {
   max-width: 400px;
+  mix-blend-mode: difference;
 }
 
 .camila-main section:nth-child(2) .about-text-wrap h1 {
   margin-bottom: 1em;
   font-family: "Suisse-Works-Regular";
   font-size: 1.8em;
+  color: #fff;
 }
 
 .camila-main section:nth-child(2) .about-text-wrap p {
   margin-bottom: 1em;
   font-size: 1em;
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .camila-main {
+    flex-direction: column-reverse;
+  }
+  .camila-main section:first-child {
+    width: 100%;
+  }
+  .camila-main section:nth-child(2) .about-text-wrap {
+    max-width: 100%;
+  }
+  .camila-main section:nth-child(2) {
+    width: 100%;
+    padding: 0 1em;
+    margin-top: 6em;
+    box-sizing: border-box;
+  }
+  .camila-main section:nth-child(2) .about-text-wrap h1 {
+    font-size: 1.5em;
+  }
 }

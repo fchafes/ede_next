@@ -27,6 +27,8 @@ export default function Footer() {
                   href={footLink.path}
                   text={footLink.text}
                   noShrink={true}
+                  diffMode={true}
+                  footer={true}
                 />
               </li>
             ))}
@@ -36,6 +38,8 @@ export default function Footer() {
                 text="Instagram"
                 noShrink={true}
                 isBlank={true}
+                diffMode={true}
+                footer={true}
               />
             </li>
           </ul>

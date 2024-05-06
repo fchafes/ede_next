@@ -1,0 +1,10 @@
+.contact-main {
+    display: flex;
+}
+
+@media screen and (max-width: 768px) {
+    .contact-main {
+        flex-direction: column-reverse;
+        padding: 0 1em;
+    }    
+}
