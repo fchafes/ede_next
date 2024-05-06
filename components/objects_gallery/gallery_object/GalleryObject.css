@@ -1,5 +1,5 @@
 .gallery-object {
-  width: 100%;
+  width: 33%;
   height: 42vh;
   max-height: 400px;
   margin-bottom: 20px;
@@ -51,9 +51,10 @@
   margin-right: 15%;
 }
 
-
 /* ----- MOBILE STYLE ----- */
 
 @media screen and (max-width: 768px) {
-
+  .gallery-object {
+    width: 100%;
+  }
 }
