@@ -15,10 +15,19 @@ const navItems = [
 ];
 
 export const Navbar = () => {
-  const isMobile = () => {
-    return window.innerWidth <= 768;
-  };
   const [menu, setMenu] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkIsMobile = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+    checkIsMobile();
+    window.addEventListener("resize", checkIsMobile);
+    return () => {
+      window.removeEventListener("resize", checkIsMobile);
+    };
+  }, []);
   const toggleMenu = () => {
     setMenu((prevMenu) => !prevMenu);
   };
@@ -34,7 +43,7 @@ export const Navbar = () => {
       <nav className="main-nav">
         <ul>
           <Switch />
-          {isMobile() ? (
+          {isMobile ? (
             <li className="no-round">
               <div onClick={toggleMenu} className="burger-button">
                 <div
@@ -59,9 +68,8 @@ export const Navbar = () => {
             </li>
           ) : (
             navItems.map((navItem) => (
-              <li>
+              <li key={navItem.path}>
                 <AnchorBox
-                  key={navItem.path}
                   href={navItem.path}
                   text={navItem.text}
                   diffMode={true}

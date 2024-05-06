@@ -6,8 +6,9 @@ export default function ObjectsGallery() {
   return (
     <>
       <main className="gallery-container">
-        {objectsData.map((galleryItem) => (
+        {objectsData.map((galleryItem, index) => (
           <GalleryObject
+            key={index}
             onSrc={galleryItem.onSrc}
             offSrc={galleryItem.offSrc}
             title={galleryItem.title}
