@@ -4,6 +4,7 @@ import "./GalleryObject.css";
 import Link from "next/link";
 import { useSelector } from "react-redux";
 import { useState } from "react";
+import Image from "next/image";
 
 export default function GalleryObject({ onSrc, offSrc, title, number, path }) {
   const theme = useSelector((state) => state.theme.darkMode);
@@ -27,6 +28,18 @@ export default function GalleryObject({ onSrc, offSrc, title, number, path }) {
         onMouseLeave={handleMouseLeave}
       >
         <Link href={path}>
+          <div className="pixel-container">
+            <Image
+              src="/imgs/small_pics/small_eclipse_off.jpg"
+              fill
+              style={{
+                zIndex: "1000",
+                position: "absolute",
+                width: "100%",
+                height: "100%",
+              }}
+            />
+          </div>
           <div
             className="object-media"
             style={{ backgroundImage: `url(${onSrc})` }}

@@ -7,6 +7,7 @@
   flex-direction: column;
   justify-content: space-between;
   font-size: 0.9em;
+  position: relative;
 }
 
 .gallery-object a {
@@ -49,6 +50,12 @@
 
 .gallery-object .object-info :first-child {
   margin-right: 15%;
+}
+
+.pixel-container {
+  width: 100%;
+  height: 92%;
+  position: absolute;
 }
 
 /* ----- MOBILE STYLE ----- */
