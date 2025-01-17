@@ -9,9 +9,9 @@ export const ContactInfo = () => {
         <br />
         info@estudiodelespacio.com
         <br />
-        Carrer de Paraguai, 14
+        Carrer d'Àlaba, 51
         <br />
-        080820, Barcelona,
+        08005, Barcelona,
         <br />
         Spain
         <br />

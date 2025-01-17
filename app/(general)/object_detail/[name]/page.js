@@ -1,6 +1,7 @@
 import "./ObjectDetail.css";
 import { AnchorBox } from "@/components/a_box/AnchorBox";
 import { objectsData } from "@/data/data";
+import ShopifyBuyButton from "@/components/ShopifyBuyButton";
 
 export default function ObjectDetail({ params }) {
   const name = params.name;
@@ -64,6 +65,7 @@ export default function ObjectDetail({ params }) {
                 biggerFont={true}
               />
             </div>
+            <ShopifyBuyButton />
           </div>
         </div>
       </main>
